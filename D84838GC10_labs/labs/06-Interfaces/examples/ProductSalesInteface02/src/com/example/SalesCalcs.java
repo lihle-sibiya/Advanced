@@ -11,10 +11,7 @@ public interface SalesCalcs {
   public static void printItemArray(SalesCalcs[] items){
     System.out.println(reportTitle);
       for(SalesCalcs item:items){
-        System.out.println("--" + item.getName() + " Report--");
-        System.out.println("Sales Price: " + item.calcSalesPrice());
-        System.out.println("Cost: " + item.calcCost());
-        System.out.println("Profit: " + item.calcProfit());
+        item.printItemReport();
       }
   }
   

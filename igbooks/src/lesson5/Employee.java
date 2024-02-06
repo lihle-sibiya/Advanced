@@ -1,4 +1,4 @@
-package lesson4;
+package lesson5;
 
 import java.util.Objects;
 
@@ -24,11 +24,12 @@ public class Employee {
                 + " SSN: " + ssn + " Salary: " + salary;
     }
 
-    public double getSalary(){
+    public double getSalary() {
         return this.salary;
     }
 
-    @Override public  String toString() {
+    @Override
+    public String toString() {
         return "id: " + this.empId + " name: " + this.name;
     }
 
@@ -39,6 +40,22 @@ public class Employee {
         if (this == o) return true;
         if (!(o instanceof Employee employee)) return false;
         return empId == employee.empId && Double.compare(salary, employee.salary) == 0 && Objects.equals(name, employee.name) && Objects.equals(ssn, employee.ssn);
+    }
+
+    public void setEmpId(int empId) {
+        this.empId = empId;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSsn(String ssn) {
+        this.ssn = ssn;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 
     @Override

@@ -14,12 +14,14 @@ public class TestSales {
     itemList[2] = new RedPaint(10, 8, 25);
     itemList[3] = new Widget(6, 5, 10);
     itemList[4] = new Widget(14, 12, 20);
-    
-    System.out.println("==Sales Report==");
-    for(SalesCalcs item:itemList){
-      item.printItemReport();
-    }
-    
+
+    //No  need to do this loop anymore
+//    System.out.println("==Sales Report==");
+//    for(SalesCalcs item:itemList){
+//      item.printItemReport();
+//    }
+
+    //This will do it for us instead of looping
     SalesCalcs.printItemArray(itemList);
     
   }
