@@ -1,4 +1,4 @@
-package com.example;
+package lesson6;
 
 public class Widget implements SalesCalcs{
   private String name = "Widget";

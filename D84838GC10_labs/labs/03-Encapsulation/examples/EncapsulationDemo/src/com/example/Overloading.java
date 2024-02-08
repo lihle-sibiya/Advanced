@@ -11,7 +11,7 @@ public class Overloading {
         System.out.println(i);
     }
 
-    public void  print(float f) {
+    public void print(float f) {
         System.out.println(f);
     }
 
@@ -19,10 +19,9 @@ public class Overloading {
         System.out.println(s);
 
     }
-    
-    public static void main(String args[])
-    {
-      Overloading ov=new Overloading();
+
+    public static void main(String args[]) {
+        Overloading ov = new Overloading();
         ov.print(5);
         ov.print("hello");
         ov.print(5.5f);

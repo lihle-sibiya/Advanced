@@ -1,4 +1,4 @@
-package com.example;
+package lesson6;
 
 public interface SalesCalcs {
   public static final String reportTitle="\n==Static List Report==";

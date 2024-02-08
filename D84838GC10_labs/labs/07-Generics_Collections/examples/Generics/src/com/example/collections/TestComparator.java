@@ -14,12 +14,14 @@ public class TestComparator {
         studentList.add(new Student("Thomas Jefferson", 1111, 3.8));
         studentList.add(new Student("George Washington", 3333, 3.4));
         studentList.add(new Student("John Adams", 2222, 3.9));
-        
+
+        System.out.println("Sort in student name");
         Collections.sort(studentList, sortName);       
         for(Student student:studentList){
             System.out.println(student);
         }
-        
+
+        System.out.println("Sort in gpa");
         Collections.sort(studentList, sortGpa);       
         for(Student student:studentList){
             System.out.println(student);

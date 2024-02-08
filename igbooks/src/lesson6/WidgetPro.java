@@ -1,4 +1,4 @@
-package com.example;
+package lesson6;
 
 public class WidgetPro extends Widget implements WidgetSalesCalcs{
   private String type;

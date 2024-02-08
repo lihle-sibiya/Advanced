@@ -1,4 +1,4 @@
-package com.example.lambda;
+package lesson8;
 
 import java.util.List;
 import java.util.function.Predicate;

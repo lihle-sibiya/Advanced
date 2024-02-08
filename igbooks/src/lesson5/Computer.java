@@ -13,6 +13,7 @@ public class Computer {
         private PowerState(String d) {
             description = d;
         }
+
         public String getDescription() {
             return description;
         }

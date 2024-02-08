@@ -1,11 +1,9 @@
-package com.example.lambda;
+package lesson8;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author MikeW
- */
+
 public class Person {
   private String givenName;
   private String surName;
@@ -31,52 +29,52 @@ public class Person {
     private String state = "";
     private String code = "";
        
-    public Person.Builder givenName(String givenName){
+    public Builder givenName(String givenName){
       this.givenName = givenName;
       return this;
     }
     
-    public Person.Builder surName(String surName){
+    public Builder surName(String surName){
       this.surName = surName;
       return this;
     }
     
-    public Person.Builder age (int val){
+    public Builder age (int val){
       age = val;
       return this;
     }
     
-    public Person.Builder gender(Gender val){
+    public Builder gender(Gender val){
       gender = val;
       return this;
     }
     
-    public Person.Builder email(String val){
+    public Builder email(String val){
       eMail = val;
       return this;
     }
     
-    public Person.Builder phoneNumber(String val){
+    public Builder phoneNumber(String val){
       phone = val;
       return this;
     }
     
-    public Person.Builder address(String val){
+    public Builder address(String val){
       address = val;
       return this;
     }
 
-    public Person.Builder city(String val){
+    public Builder city(String val){
       city = val;
       return this;
     }
 
-    public Person.Builder state(String val){
+    public Builder state(String val){
       state = val;
       return this;
     }
 
-    public Person.Builder code(String val){
+    public Builder code(String val){
       code = val;
       return this;
     }
@@ -90,7 +88,7 @@ public class Person {
     super();
   }
     
-  private Person(Person.Builder builder){
+  private Person(Builder builder){
     givenName = builder.givenName;
     surName = builder.surName;
     age = builder.age;
@@ -168,7 +166,7 @@ public class Person {
     List<Person> people = new ArrayList<>();
     
     people.add(
-      new Person.Builder()
+      new Builder()
             .givenName("Bob")
             .surName("Baker")
             .age(21)
@@ -183,7 +181,7 @@ public class Person {
       );
     
     people.add(
-      new Person.Builder()
+      new Builder()
             .givenName("Jane")
             .surName("Doe")
             .age(25)
@@ -198,7 +196,7 @@ public class Person {
       );
     
     people.add(
-      new Person.Builder()
+      new Builder()
             .givenName("John")
             .surName("Doe")
             .age(25)
@@ -213,7 +211,7 @@ public class Person {
     );
     
     people.add(
-      new Person.Builder()
+      new Builder()
             .givenName("James")
             .surName("Johnson")
             .age(45)
@@ -228,7 +226,7 @@ public class Person {
     );
     
     people.add(
-      new Person.Builder()
+      new Builder()
             .givenName("Joe")
             .surName("Bailey")
             .age(67)
@@ -243,7 +241,7 @@ public class Person {
     );
     
     people.add(
-      new Person.Builder()
+      new Builder()
             .givenName("Phil")
             .surName("Smith")
             .age(55)
@@ -258,7 +256,7 @@ public class Person {
     );
     
     people.add(
-      new Person.Builder()
+      new Builder()
             .givenName("Betty")
             .surName("Jones")
             .age(85)

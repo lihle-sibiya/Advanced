@@ -1,6 +1,6 @@
-package com.example;
+package lesson6;
 
-public class Z03Analyzer {
+public class TestInnerClassFunctionalInterface {
 
   public static void searchArr(String[] strList, String searchStr, StringAnalyzer analyzer){
     for(String currentStr:strList){
@@ -16,11 +16,11 @@ public class Z03Analyzer {
     String searchStr = "to";
     System.out.println("Searching for: " + searchStr);
     
-    // Call concrete class that implments StringAnalyzer
-    ContainsAnalyzer contains = new ContainsAnalyzer();
+    // Call concrete class that implements StringAnalyzer
+   // ContainsAnalyzer contains = new ContainsAnalyzer();
         
     System.out.println("===Contains===");
-    Z03Analyzer.searchArr(strList01, searchStr, new StringAnalyzer() {
+    TestInnerClassFunctionalInterface.searchArr(strList01, searchStr, new StringAnalyzer() {
       @Override
       public boolean analyze(String sourceStr, String searchStr) {
         return sourceStr.contains(searchStr);
