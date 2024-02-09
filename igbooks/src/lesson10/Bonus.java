@@ -1,5 +1,5 @@
 
-package com.example.lambda;
+package lesson10;
 
 /**
  *

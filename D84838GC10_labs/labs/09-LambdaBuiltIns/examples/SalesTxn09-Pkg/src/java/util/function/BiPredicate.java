@@ -1,4 +1,6 @@
-package java.util.function;
+//package java.util.function;
+package com.example.lambda;
+
 
 public interface BiPredicate<T, U> {
     

@@ -7,7 +7,7 @@ public class TestDoubleFunction {
         DoubleFunction<String> calc = t -> String.valueOf(t * 3);
         String result = calc.apply(20);
 
-        System.out.println(result + result);
+        System.out.println("The value is: " + result);
 
 
     }
