@@ -27,7 +27,7 @@ case DIAMONDS:
     System.out.print("diamond");   
 break;    
 case HEARTS:
-    System.out.print("diamond");   
+    System.out.print("hearts");
 break; 
 case SPADES:	
     System.out.print("spades");   

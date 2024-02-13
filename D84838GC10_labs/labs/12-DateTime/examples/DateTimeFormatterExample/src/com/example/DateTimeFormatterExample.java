@@ -9,16 +9,9 @@ import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 
-/**
- *
- * @author tmcginn
- */
 public class DateTimeFormatterExample {
 
-  /**
-   * @param args the command line arguments
-   */
-  public static void main(String[] args) {
+    public static void main(String[] args) {
     ZonedDateTime now = ZonedDateTime.now();
     DateTimeFormatter formatter = DateTimeFormatter.ISO_LOCAL_DATE;
     System.out.println(now.format(formatter));

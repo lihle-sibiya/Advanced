@@ -12,10 +12,7 @@ import java.time.zone.ZoneRules;
 import java.util.List;
 import java.util.Set;
 
-/**
- *
- * @author tmcginn
- */
+
 public class ZonedDateAndTime {
 
   /**

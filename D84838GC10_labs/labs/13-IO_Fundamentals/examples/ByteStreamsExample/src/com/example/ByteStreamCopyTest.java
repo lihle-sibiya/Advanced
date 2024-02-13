@@ -8,14 +8,18 @@ import java.io.IOException;
 public class ByteStreamCopyTest {
 
     public static void main(String[] args) {
-        if (args.length < 2) {
-            System.out.println ("Usage: ByteStreamCopyTest <original file> <copy>");
-            System.exit(-1);
-        }
+
+//        if (args.length < 2) {
+//            System.out.println ("Usage: ByteStreamCopyTest <original file> <copy>");
+//            System.exit(-1);
+//        }
                 byte[] b = new byte[128]; 
          // Example use of InputStream methods
-         try (FileInputStream fis = new FileInputStream (args[0]);
+         try (FileInputStream fis = new FileInputStream ("args[0]");
               FileOutputStream fos = new FileOutputStream (args[1])) {
+
+//         try (FileInputStream fis = new FileInputStream ("C://Bootcamp/input.txt");
+//         FileOutputStream fos = new FileOutputStream ("C://Bootcamp/output.txt") {
              System.out.println ("Bytes available: " + fis.available());
             int count = 0; int read = 0;
             while ((read = fis.read(b)) != -1) {
