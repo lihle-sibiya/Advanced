@@ -29,7 +29,9 @@ public class SerializeStock {
         System.out.println ("Before serializaton:\n" + p + "\n");
 
         // Write out the Portfolio
-        try (FileOutputStream fos = new FileOutputStream(args[0]);
+        //try (FileOutputStream fos = new FileOutputStream(args[0]);
+
+        try (FileOutputStream fos = new FileOutputStream("C://Lihle//portfolio.ser");
                 ObjectOutputStream out = new ObjectOutputStream(fos)) {
             out.writeObject(p);
             System.out.println ("Successfully wrote Portfolio as an object");
@@ -38,7 +40,9 @@ public class SerializeStock {
         }
         
         // Read the Portfolio back in
-        try (FileInputStream fis = new FileInputStream(args[0]);
+      //  try (FileInputStream fis = new FileInputStream(args[0]);
+
+        try (FileInputStream fis = new FileInputStream("C:\\Users\\Lihle\\portfolio.ser");
                 ObjectInputStream in = new ObjectInputStream(fis)) {
             Portfolio newP = (Portfolio)in.readObject();
             System.out.println ("Success: read Portfolio back in:\n" + newP);

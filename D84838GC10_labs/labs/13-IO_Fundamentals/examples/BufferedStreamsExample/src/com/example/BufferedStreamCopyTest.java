@@ -17,7 +17,10 @@ public class BufferedStreamCopyTest {
         }
         try (BufferedReader bufInput = new BufferedReader(new FileReader(args[0]));
                 BufferedWriter bufOutput = new BufferedWriter(new FileWriter(args[1]))) {
-            String line = "";
+
+//        try (BufferedReader bufInput = new FileReader("C://Bootcamp/input.txt"));
+//             BufferedWriter bufOutput = new FileWriter("C://Bootcamp/output.txt"))) {
+        String line = "";
             // read the first line 
             while ((line = bufInput.readLine()) != null) {
                 // write the line out to the output file

@@ -18,7 +18,9 @@ public class CopyStream {
         }
 
         // Open the file to write to
-        Path path = Paths.get(args[1]);
+       // Path path = Paths.get(args[1]);
+
+        Path path = Paths.get("C:/Bootcamp/input.txt");
         URI u = URI.create(args[0]);
         try (InputStream in = u.toURL().openStream()) {
             Files.copy(in, path, REPLACE_EXISTING);
